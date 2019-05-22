@@ -64,7 +64,7 @@ cd ..
 ${ClusterName}-Master/dstserver start
 ${ClusterName}-Caves/dstserver start
 
-sleep 3
+sleep 1
 
 ${ClusterName}-Master/dstserver stop
 ${ClusterName}-Caves/dstserver stop
@@ -73,6 +73,8 @@ cp server-Master.ini ~/.klei/DoNotStarveTogether/${ClusterName}/Master/server.in
 cp server-Caves.ini ~/.klei/DoNotStarveTogether/${ClusterName}/Caves/server.ini
 
 cp cluster.ini ~/.klei/DoNotStarveTogether/${ClusterName}/cluster.ini
+
+cp worldgenoverride.lua ~/.klei/DoNotStarveTogether/${ClusterName}/Caves/
 
 echo "cluster_name = ${ClusterName}" >> ~/.klei/DoNotStarveTogether/${ClusterName}/cluster.ini
 echo "cluster_password = $(cat pw.txt)" >> ~/.klei/DoNotStarveTogether/${ClusterName}/cluster.ini
