@@ -9,3 +9,4 @@ It's easy!
 * Create file ``pw.txt`` with your server password.
 * Change ClusterName in file ``setup.sh`` in line 1. This is the display name of your server.
 * Run ``./setup.sh``
+* Have fun!
